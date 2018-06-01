@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello jQuery</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="hello.js"></script>
-    </head>
+<head>
+   <meta name="author" content="Parul Saxena">
+   <meta name="description" content="A test page for Get and Set methods of Global dynamoDB tables">
+   <title>Welcome to Global table test Page</title>
+   <img src="ddb.png"/>
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+        <!--jQuery, linked from a CDN-->
+   <script src="DDBScript.js"></script>
+   <script type="text/javascript" src="http://use.typekit.com/oya4cmx.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+   <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to Global table test page</h1>
+  <h3>Global Get method</h3>
+   <section id="fetch">
+      <input type="text" placeholder="Enter key" id="ddbkey" />
+      <button id="search">Find Value</button>
+   </section>
+   <section id="fetchresponse">
+   </section>
 
-    <body>
-        <div>
-            <p class="greeting-id">The ID is </p>
-            <p class="greeting-content">The content is </p>
-        </div>
-    </body>
+</div>
+
+<div class="container">
+
+  <h3>Global Set method</h3>
+   <section id="update">
+      <input type="text" placeholder="Enter key" id="setddbkey" />
+      <input type="text" placeholder="Enter value" id="setddbvalue" />
+      <button id="updatevalue">Update Value</button>
+   </section>
+   <section id="updateresponse">
+   </section>
+
+</div>
+
+</body>
+<footer>
+  <img id="banner" align="bottom-right" src="amazon.png"/>
+</footer>
 </html>
