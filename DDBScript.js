@@ -12,7 +12,7 @@ $(document).ready(function(){
 
             $('#fetchresponse').html("<h3 class='loading'>Searching .... </h3>");
 
-            $.getJSON("https://globalapp.saxparul.us/v1/GetDDB/?key="+key, function(json) {
+            $.getJSON("https://globalapp.techieblog.us/v1/GetDDB/?key="+key, function(json) {
               if (json.status=200){
                if (json.errorType != "KeyError"){
                  var region = json[1];
@@ -47,7 +47,7 @@ $(document).ready(function(){
 
             $('#updateresponse').html("<h3 class='loading'>Searching .... </h3>");
 
-            $.getJSON("https://globalapp.saxparul.us/v1/SetDDB/?key="+ key + "&value=" + value , function(json) {
+            $.getJSON("https://globalapp.techieblog.us/v1/SetDDB/?key="+ key + "&value=" + value , function(json) {
                if (json[0].ResponseMetadata.HTTPStatusCode=200){
                      $('#updateresponse').html('<h3 class="loading"> Value Updated successfully in region ' + json[1]+' of the Global Table. </h3>');
                   } else {
